@@ -1,8 +1,8 @@
-
+# importing from environments
 import pygame
 import random
 
-
+# declare colors
 colors = [
     (0, 0, 0),
     (120, 37, 179),
@@ -13,7 +13,7 @@ colors = [
     (180, 34, 122),
 ]
 
-
+# creating class for shapes
 class Figure:
     x = 0
     y = 0
@@ -95,4 +95,3 @@ class Tetris:
                         self.field[i1][j] = self.field[i1 - 1][j]
         self.score += lines ** 2
 
-  
